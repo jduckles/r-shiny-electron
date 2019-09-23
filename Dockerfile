@@ -22,10 +22,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  && cd xar-1.5.2 && ./configure && make && make install \
  && cd .. && rm -rf xar-1.5.2 \
 # This innoextract latest version required to extract from Windows installer
- &&  wget https://github.com/dscharrer/innoextract/releases/download/1.7/innoextract-1.7.tar.gz \
- && tar -xvzf innoextract-1.7.tar.gz \
- && mkdir -p innoextract-1.7/build && cd innoextract-1.7/build \
- && cmake .. && make && make install && cd ../.. && rm -rf innoextract-1.7 innoextract-1.7.tar.gz \
+ &&  wget https://github.com/dscharrer/innoextract/releases/download/1.8/innoextract-1.8.tar.gz \
+ && tar -xvzf innoextract-1.8.tar.gz \
+ && mkdir -p innoextract-1.8/build && cd innoextract-1.8/build \
+ && cmake .. && make && make install && cd ../.. && rm -rf innoextract-1.8 innoextract-1.8.tar.gz \
  && install2.r automagic
  
 
